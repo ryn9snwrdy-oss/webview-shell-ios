@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>WebViewShell</string>
+	<string>汐聊</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -24,11 +24,10 @@
 	<true/>
 
 	<!-- 让 WKWebView 里的 Service Worker 能用（缓存静态资源、离线可用）。
-	     不加这条 = navigator.serviceWorker 压根不存在，每次冷启动全量走网络。
-	     ★ 改成你自己的域名 -->
+	     不加这条 = navigator.serviceWorker 压根不存在，每次冷启动全量走网络。 -->
 	<key>WKAppBoundDomains</key>
 	<array>
-		<string>example.com</string>
+		<string>xi.xichat.top</string>
 	</array>
 
 	<key>UISupportedInterfaceOrientations</key>
@@ -43,14 +42,14 @@
 	<dict/>
 
 	<key>NSCameraUsageDescription</key>
-	<string>Allow camera access</string>
+	<string>用于拍摄和发送图片、视频</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Allow photo library access</string>
+	<string>用于选择相册中的图片和视频发送</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Save images to photo library</string>
+	<string>用于保存聊天中的图片到相册</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Allow microphone access</string>
+	<string>用于录制语音消息</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Allow location access</string>
+	<string>用于分享位置</string>
 </dict>
 </plist>
